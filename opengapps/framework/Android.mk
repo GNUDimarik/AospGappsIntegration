@@ -1,0 +1,20 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.google.android.maps.jar
+LOCAL_MODULE_CLASS = JAVA_LIBRARIES
+LOCAL_SRC_FILES = $(TARGET_ARCH)/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH = $(TARGET_OUT_DATA)/../system/framework
+LOCAL_CERTIFICATE = platform
+PRIVILAGED_MODULE = true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.google.android.media.effects.jar
+LOCAL_MODULE_CLASS = JAVA_LIBRARIES
+LOCAL_SRC_FILES = $(TARGET_ARCH)/$(LOCAL_MODULE)
+LOCAL_MODULE_PATH = $(TARGET_OUT_DATA)/../system/framework
+LOCAL_CERTIFICATE = platform
+PRIVILAGED_MODULE = true
+include $(BUILD_PREBUILT)
+
